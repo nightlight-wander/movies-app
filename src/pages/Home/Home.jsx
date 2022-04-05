@@ -26,7 +26,7 @@ const Home = () => {
       // console.log(results);
       setMoviesContent(results)
     })()
-  }, [])
+  }, [page])
   return (
     <>
       <div className='main-content'>
