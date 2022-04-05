@@ -17,7 +17,6 @@ const Home = () => {
 
   const pageHandler=(e)=>{
     setPage(e.target.textContent)
-    console.log(e.target.textContent)
   }
 
   useEffect(() => {
