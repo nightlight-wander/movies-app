@@ -23,3 +23,7 @@
     border-radius: 50%;
 
 }
+
+.page-index.active{
+    color:red;
+}

@@ -6,7 +6,6 @@ const Movies = () => {
   const [moviesContent, setMoviesContent] = useState([])
   const [page, setPage] = useState(1);
   const [pagesCount, setPagesCount] = useState();
-  // const pagesDisplayLimit =10;
   const [firstPage, setFirstPage] = useState(0);
   const [lastPage, setLastPage] = useState(10);
   const Pages = (props) => {
@@ -34,7 +33,8 @@ const Movies = () => {
   }
 
   const pageHandler = (e) => {
-    setPage(e.target.textContent)
+    setPage(Number(e.target.textContent))
+
   }
 
   useEffect(() => {
@@ -43,7 +43,6 @@ const Movies = () => {
       console.log(data);
       setMoviesContent(data.results);
       setPagesCount(data.total_pages);
-      // setPage(page=>page+1)
     })()
   }, [page, firstPage, lastPage])
   return (
@@ -56,7 +55,7 @@ const Movies = () => {
       <div className="changePage flex-center">
         <button className="page-index" onClick={()=>prevPageHandler()}>&lt;</button>
         <Pages pagesCount={pagesCount} firstPage={firstPage} lastPage={lastPage}>{(index) =>
-            <button className="page-index" key={index} onClick={pageHandler}>{index}</button>
+            <button className={`page-index ${page===index?"active":null}`} key={index} onClick={pageHandler}>{index}</button>
         }
         </Pages>
         <button className="page-index" onClick={()=>nextPageHandler()}>&gt;</button>
