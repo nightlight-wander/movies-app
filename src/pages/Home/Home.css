@@ -17,13 +17,13 @@
     height: 4rem;
     padding-top: 0.2rem;
     font-weight: 600;
-    border: 0.2rem solid var(--gold1);
-    background-color: var(--gold1);
-    color: var(--pink8);
+    background-color: var(--orchid);
+    color: var(--pink7);
     border-radius: 50%;
 
 }
 
 .page-index.active{
-    color:red;
+    color:var(--pink7);
+    background-color: var(--raspberry);
 }

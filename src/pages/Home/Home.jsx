@@ -2,7 +2,6 @@ import axios from 'axios';
 import React, { useState, useEffect } from 'react';
 import "./Home.css";
 import { MovieCard } from '../../components/MovieCard/MovieCard';
-// import { Pages } from '../../components/Pages/Pages';
 
 const Home = () => {
   const [moviesContent, setMoviesContent] = useState([])
@@ -21,9 +20,8 @@ const Home = () => {
 
   useEffect(() => {
     (async () => {
-      const { data: { results } } = await axios.get(`https://api.themoviedb.org/3/trending/all/day?api_key=${process.env.REACT_APP_KEY}&page=${page}`)
-      // console.log(results);
-      setMoviesContent(results)
+      const { data} = await axios.get(`https://api.themoviedb.org/3/trending/all/day?api_key=${process.env.REACT_APP_KEY}&page=${page}`)
+      setMoviesContent(data.results)
     })()
   }, [page])
   return (

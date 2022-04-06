@@ -7,8 +7,8 @@ import { BottomNav } from "./components/BottomNav/BottomNav";
 import "./App.css";
 function App() {
   return (
-    <Router>
-      <Header />
+    <>
+    <Header />
       <div className="App">
         <Routes>
           <Route path="/" element={<Home />}></Route>
@@ -17,7 +17,8 @@ function App() {
         </Routes>
       </div>
       <BottomNav />
-    </Router>
+    </>
+      
   );
 }
 
