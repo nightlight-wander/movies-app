@@ -43,6 +43,7 @@ const Movies = () => {
   const selectedGenreIds=selectedGenres.map(sg=>sg.id);
   const useGenres=selectedGenreIds.reduce((curTotal,curItem)=>curTotal+","+curItem,selectedGenreIds[0]);
   const genreIdsString=useGenres;
+  console.log(selectedGenres)
 
   useEffect(() => {
     (async () => {

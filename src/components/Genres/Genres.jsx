@@ -23,6 +23,7 @@ const Genres = ({
                 setSelectedGenres([...selectedGenres,genres[i]])
             }
         }
+        setPage(Number(1))
     }
 
 
