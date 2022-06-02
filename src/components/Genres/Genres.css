@@ -1,4 +1,10 @@
 .genres-wrapper{
-    flex-wrap: wrap;
     padding: 2rem;
+    max-height: 10rem;
+    overflow-x: auto;
+    display:flex;
+}
+
+.selectedGenreBtn{
+    background-color:var(--pink3)
 }

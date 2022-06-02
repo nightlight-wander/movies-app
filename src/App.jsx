@@ -8,7 +8,7 @@ import "./App.css";
 function App() {
   return (
     <>
-    <Header />
+    {/* <Header /> */}
       <div className="App">
         <Routes>
           <Route path="/" element={<Home />}></Route>
