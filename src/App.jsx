@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import { Home } from "./pages/Home/Home";
 import { Movies } from "./pages/Movies/Movies";
 import { Series } from "./pages/Series/Series";
@@ -8,7 +8,7 @@ import "./App.css";
 function App() {
   return (
     <>
-    {/* <Header /> */}
+    <Header />
       <div className="App">
         <Routes>
           <Route path="/" element={<Home />}></Route>

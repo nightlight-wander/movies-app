@@ -12,7 +12,10 @@ const Home = () => {
       items.push(props.children(i))
     }
     return items
+    
   }
+
+  
 
   const pageHandler=(e)=>{
     setPage(e.target.textContent)

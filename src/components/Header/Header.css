@@ -1,1 +1,17 @@
 @import url("https://wildflowerui.netlify.app/pages/components/Navigation/navigation.css");
+
+.header{
+    width:auto;
+}
+
+.search-bar{
+    border: 2px solid var(--yellowGold);
+    border-radius:1rem;
+}
+
+.header .submit-btn{
+    border-radius:1rem;
+    color:var(--orchid);
+    background:var(--yellowGold);
+    border:2px solid var(--pastelPink)
+}

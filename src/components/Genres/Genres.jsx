@@ -15,6 +15,7 @@ const Genres = ({
             const data=await axios.get(`https://api.themoviedb.org/3/genre/${media_type}/list?api_key=${process.env.REACT_APP_KEY}&language=en-US`)
             setGenres(data.data.genres)
         })()
+        // eslint-disable-next-line
     },[])
 
     // const genreHandler=(id)=>{

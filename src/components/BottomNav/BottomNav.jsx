@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import MovieIcon from "@mui/icons-material/Movie";
 // import TvIcon from "@mui/icons-material/Tv";
-import WhatshotIcon from "@mui/icons-material/Whatshot";
 import HomeIcon from '@mui/icons-material/Home';
 import "./BottomNav.css";
 
