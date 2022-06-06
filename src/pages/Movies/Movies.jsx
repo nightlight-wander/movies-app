@@ -40,12 +40,10 @@ const Movies = () => {
   };
 
   const selectedGenreIds = selectedGenres.map((sg) => sg.id);
-  const useGenres = selectedGenreIds.reduce(
-    (curTotal, curItem) => curTotal + "," + curItem,
-    selectedGenreIds[0]
+  const genreIdsString  = selectedGenreIds.length<1?"":selectedGenreIds.reduce(
+    (curTotal, curItem) => curTotal + "," + curItem
   );
-  const genreIdsString = useGenres;
-  console.log(selectedGenres);
+  console.log(genreIdsString)
 
   useEffect(() => {
     (async () => {

@@ -7,12 +7,10 @@ const MovieCard = ({
     poster_path,
     media_type,
     }) => {
-    const img_sz300 = "https://image.tmdb.org/t/p/w300";
-    // const img_sz500 = "https://image.tmdb.org/t/p/w500";
 
     return (
         <div className='movie-card' key={id}>
-            <img src={`${img_sz300}/${poster_path}`} alt={title}></img>
+            <img src={`https://images5.alphacoders.com/909/thumb-1920-909635.jpg`} alt={title} ></img>
             <div className='name-info'>
                 <h4 className='title'>{title}</h4>
                 <p className='media'>{media_type === "movie" ? "Movie" : "Series"}</p>

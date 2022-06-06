@@ -18,15 +18,6 @@ const Genres = ({
         // eslint-disable-next-line
     },[])
 
-    // const genreHandler=(id)=>{
-    //     for(let i=0;i<genres.length;i++){
-    //         if(id===genres[i].id){
-    //             setSelectedGenres([...selectedGenres,genres[i]])
-    //         }
-    //     }
-        
-    // }
-
     const addGenres=(genre)=>{
         setSelectedGenres(prevGenres=>[...prevGenres,genre]);
         setGenres(genres.filter(item=>item.id!==genre.id));
