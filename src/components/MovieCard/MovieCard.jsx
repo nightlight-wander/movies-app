@@ -6,12 +6,12 @@ const MovieCard = ({
     title,
     poster_path,
     media_type,
-    vote_average }) => {
+    }) => {
     const img_sz300 = "https://image.tmdb.org/t/p/w300";
-    const img_sz500 = "https://image.tmdb.org/t/p/w500";
+    // const img_sz500 = "https://image.tmdb.org/t/p/w500";
 
     return (
-        <div className='movie-card'>
+        <div className='movie-card' key={id}>
             <img src={`${img_sz300}/${poster_path}`} alt={title}></img>
             <div className='name-info'>
                 <h4 className='title'>{title}</h4>

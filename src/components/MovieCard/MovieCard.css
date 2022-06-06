@@ -9,7 +9,7 @@ img{
     height: 80rem;
     display: flex;
     flex-direction: column;
-    background-color: var(--orchid);
+    background-color: var(--light-red);
     border-radius: 1rem;
     height: 85%;
 }

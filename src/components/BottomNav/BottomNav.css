@@ -4,9 +4,19 @@
     width: 100%;
     gap:10rem;
     z-index:10;
-
 }
 
 .mg-top-nav{
     margin-top: 2rem;
+}
+
+.actions-icon{
+    background-color:var(--pastelPink);
+    color:var(--light-red);
+    padding:1rem;
+    border-radius:100%;
+}
+
+.actions-name{
+    color:var(--light-red);
 }
